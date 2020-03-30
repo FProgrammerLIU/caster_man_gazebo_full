@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: caster_man_description
+    relative_path: urdf/caster_man_j2s6s300_xacro.xacro
+    xacro_args: "--inorder "
+  SRDF:
+    relative_path: config/caster_j2s6s300.srdf
+  CONFIG:
+    author_name: hangliu
+    author_email: prog_liu_study@163.com
+    generated_timestamp: 1583463389

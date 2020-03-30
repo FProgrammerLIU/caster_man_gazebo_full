@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="pan_tilt" description="iqr pan tilt">
+  <xacro:include filename = "$(find pan_tilt_description)/urdf/pan_tilt.gazebo.xacro" />
+  <xacro:include filename = "$(find pan_tilt_description)/urdf/pan_tilt.urdf.xacro" />
+  <xacro:property name="PI" value="3.1415926535897931" />
+  <link name="world"/>
+  <xacro:pan_tilt parent="world" >
+    <origin xyz="0 0 0" rpy="0 0 0" />
+  </xacro:pan_tilt>
+</robot>
